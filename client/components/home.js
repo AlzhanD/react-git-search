@@ -46,7 +46,7 @@ const Home = () => {
     <div>
       <Head />
       <Header userName={userName} readMe={readMe} user={user} handleFind={handleFind} />
-      <div className="container page-wrap mx-auto pt-20">
+      <div className="container page-wrap mx-auto pt-20 pb-8">
         <div>
           <Route exact path="/" component={() => <Main />} />
           <Route
