@@ -10,6 +10,7 @@ import Footer from './footer'
 
 const Home = () => {
   const [userRepositories, setUserRepositories] = useState([])
+  const [find, setFind] = useState('')
   const [readMe, setReadMe] = useState('')
   const { userName, repositoryName } = useParams()
   const [user, setUser] = useState({})
@@ -38,10 +39,13 @@ const Home = () => {
   useEffect(() => {
     axios(`https://api.github.com/users/${userName}`).then(({ data }) => setCommit(data))
   }, [userName])
+  const handleFind = (findStr) => {
+    setFind(findStr)
+  }
   return (
     <div>
       <Head />
-      <Header userName={userName} readMe={readMe} user={user} />
+      <Header userName={userName} readMe={readMe} user={user} handleFind={handleFind} />
       <div className="container page-wrap mx-auto pt-20">
         <div>
           <Route exact path="/" component={() => <Main />} />
@@ -49,7 +53,12 @@ const Home = () => {
             exact
             path="/:userName"
             component={() => (
-              <RepoList userRepositories={userRepositories} userName={userName} commit={commit} />
+              <RepoList
+                userRepositories={userRepositories}
+                userName={userName}
+                commit={commit}
+                find={find}
+              />
             )}
           />
           <Route

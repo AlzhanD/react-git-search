@@ -1,21 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 
 const RepoList = (props) => {
-  const [search, setSearch] = useState('')
-  const filteredList = props.userRepositories.filter((el) => el.name.toLowerCase().includes(search))
+  const filteredList = props.userRepositories.filter((el) =>
+    el.name.toLowerCase().includes(props.find)
+  )
   return (
     <div>
-      <div className="max-w-xl mx-auto mb-20 border-b border-b-2 border-teal-500 py-2">
-        <input
-          className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-          type="text"
-          placeholder="search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
       <table className="min-w-full">
         <thead>
           <tr>
