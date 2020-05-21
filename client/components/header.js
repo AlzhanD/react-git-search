@@ -12,13 +12,15 @@ const Header = (props) => {
         {props.userName && <span className="text-3xl mx-2">{props.user.login}</span>}
       </div>
       <div>
-        <input
-          className="placeholder-white appearance-none bg-transparent border-none w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
-          type="text"
-          placeholder="search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        {!props.readMe && (
+          <input
+            className="placeholder-white appearance-none bg-transparent border-none w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
+            type="text"
+            placeholder="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        )}
       </div>
       <div id="menu" className="flex space-x-4">
         <div>
