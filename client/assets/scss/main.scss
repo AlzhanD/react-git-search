@@ -1,0 +1,14 @@
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+//body{
+//  position: relative;
+//  min-height: 100vh;
+//}
+.page-wrap{
+  min-height: calc(100vh - 112px - 75px);
+}
+//background: linear-gradient(90deg, #36d7b7, #2b303b);
