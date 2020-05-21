@@ -4,10 +4,7 @@ import './main.scss'
 
 const Header = (props) => {
   const [search, setSearch] = useState('')
-  const handleSearch = (e) => {
-    setSearch(e.target.value)
-    props.handleFind(search)
-  }
+  props.handleFind(search)
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-600 p-6 header-bg-cl">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -20,7 +17,7 @@ const Header = (props) => {
           type="text"
           placeholder="search"
           value={search}
-          onChange={handleSearch}
+          onChange={(e) => setSearch(e.target.value)}
         />
       </div>
       <div id="menu" className="flex space-x-4">
