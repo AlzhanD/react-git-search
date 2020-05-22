@@ -2,8 +2,8 @@
 
 ## Quick start
 
-
-2. To install dependencies and clean the git repo run:
+**The webpage has a convenient search tool, witch navigates to all other projects, and allows viewing readMe file as wel
+2. To install dependencies and clean the git repo run:**
 
   ```shell
   $ yarn install
