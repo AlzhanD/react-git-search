@@ -39,7 +39,14 @@ const RepoList = (props) => {
                 </a>
               </td>
               <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                <Link to={`/${props.userName}/${el.name}`}>View readme</Link>
+                <Link to={`/${props.userName}/${el.name}`}>
+                  <a
+                    className="bg-green-800 hover:bg-green-600 font-semibold px-2 inline-flex text-xs leading-5 rounded-full text-white"
+                    href="#"
+                  >
+                    View readme
+                  </a>
+                </Link>
               </td>
               <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                 {new Date(el.updated_at).toLocaleString()}
