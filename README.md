@@ -1,6 +1,15 @@
-# React Redux boilerplate
+![kissclipart-brand-icon-github-icon-logo-icon-e1034620e946e9b9 (1)](https://user-images.githubusercontent.com/62444547/82687483-56ab2080-9c25-11ea-9feb-55143e441ca7.png)
+
+
+# Documentation 
 
 ###### The webpage has a convenient search tool, witch navigates to all other projects, and allows viewing readMe file as wel
+
+![11](https://user-images.githubusercontent.com/62444547/82688062-3cbe0d80-9c26-11ea-9c29-296f3e69d6a3.png)
+
+
+![Screenshot from 2020-05-22 12-07-22](https://user-images.githubusercontent.com/62444547/82688128-52333780-9c26-11ea-94de-213e41dc0bb1.png)
+
 
 
 ## Quick start
