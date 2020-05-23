@@ -9,7 +9,7 @@ const Main = () => {
     <div className="main-bg flex justify-center items-center h-screen background-image">
       <Head title="Hello" />
       <div />
-      <div className=" div-bg border-solid border-2 border-orange-600 p-20">
+      <div className=" div-bg p-20">
         <img
           className="relative mx-auto h-12 w-auto"
           src="https://image.flaticon.com/icons/svg/25/25231.svg"

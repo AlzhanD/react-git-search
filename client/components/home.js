@@ -45,7 +45,13 @@ const Home = () => {
   return (
     <div>
       <Head />
-      <Header userName={userName} readMe={readMe} user={user} handleFind={handleFind} />
+      <Header
+        userName={userName}
+        readMe={readMe}
+        user={user}
+        handleFind={handleFind}
+        repositoryName={repositoryName}
+      />
       <div className="container page-wrap mx-auto pt-20 pb-8">
         <div>
           <Route exact path="/" component={() => <Main />} />
@@ -58,6 +64,7 @@ const Home = () => {
                 userName={userName}
                 commit={commit}
                 find={find}
+                readMe={readMe}
               />
             )}
           />

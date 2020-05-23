@@ -12,7 +12,7 @@ const Header = (props) => {
         {props.userName && <span className="text-3xl mx-2">{props.user.login}</span>}
       </div>
       <div>
-        {!props.readMe && (
+        {!props.repositoryName && (
           <input
             className="placeholder-white appearance-none bg-transparent border-none w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
@@ -28,7 +28,7 @@ const Header = (props) => {
             <Link to="/">
               <button
                 type="button"
-                className="btnClass mx-2 transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ... bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"
+                className="btnClass mx-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ... bg-blue-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"
               >
                 Main
               </button>
@@ -36,11 +36,11 @@ const Header = (props) => {
           )}
         </div>
         <div>
-          {props.readMe && (
+          {props.repositoryName && (
             <Link to={`/${props.userName}`}>
               <button
                 type="button"
-                className="btnClass mx-2 transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 ... bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"
+                className="btnClass mx-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ... bg-blue-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"
               >
                 Repositories
               </button>
