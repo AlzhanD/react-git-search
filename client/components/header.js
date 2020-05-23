@@ -6,7 +6,7 @@ const Header = (props) => {
   const [search, setSearch] = useState('')
   props.handleFind(search)
   return (
-    <nav className="flex items-center flex-wrap justify-between bg-gray-900 h-24 pr-20 pl-20 header-bg-cl">
+    <nav className="flex items-center flex-wrap justify-between bg-gray-900 h-24 pr-20 pl-20 header-bg-cl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         {props.userName && <img className="w-16 mx-2" src={props.user.avatar_url} alt="" />}
         {props.userName && <span className="text-3xl mx-2">{props.user.login}</span>}

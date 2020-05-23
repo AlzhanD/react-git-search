@@ -5,13 +5,6 @@
 
 ###### The webpage has a convenient search tool, witch navigates to all other projects, and allows viewing readMe file as wel
 
-![11](https://user-images.githubusercontent.com/62444547/82688062-3cbe0d80-9c26-11ea-9c29-296f3e69d6a3.png)
-
-
-![Screenshot from 2020-05-22 12-07-22](https://user-images.githubusercontent.com/62444547/82688128-52333780-9c26-11ea-94de-213e41dc0bb1.png)
-
-
-
 ## Quick start
 
 2. To install dependencies and clean the git repo run:

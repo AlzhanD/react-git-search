@@ -7,6 +7,7 @@ import RepoList from './repoList'
 import RepoView from './nameUser'
 import Header from './header'
 import Footer from './footer'
+import './main.scss'
 
 const Home = () => {
   const [userRepositories, setUserRepositories] = useState([])
@@ -43,7 +44,7 @@ const Home = () => {
     setFind(findStr)
   }
   return (
-    <div>
+    <div className="homeCss">
       <Head />
       <Header
         userName={userName}
@@ -52,7 +53,7 @@ const Home = () => {
         handleFind={handleFind}
         repositoryName={repositoryName}
       />
-      <div className="container page-wrap mx-auto pt-20 pb-8">
+      <div className="container page-wrap mx-auto pt-20 pb-8 sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center">
         <div>
           <Route exact path="/" component={() => <Main />} />
           <Route
